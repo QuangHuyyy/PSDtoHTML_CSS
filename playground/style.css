@@ -14,7 +14,6 @@ body {
   color: #1a2b5f;
   line-height: 1.4;
   font-weight: 400;
-  padding-bottom: 20rem;
 }
 
 img {
@@ -290,6 +289,134 @@ a {
 }
 .text-clam--2 {
   -webkit-line-clamp: 2;
+}
+
+.partner__container {
+  max-width: 83rem;
+}
+.partner__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 7.5rem;
+  margin-bottom: 6.5rem;
+  border-bottom: 2px solid;
+}
+.partner__logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0 1.5rem 19rem;
+}
+
+.connect {
+  margin-bottom: 18rem;
+}
+.connect__title, .connect__desc {
+  text-align: center;
+}
+.connect__title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+.connect__desc {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 6.5rem;
+}
+.connect__desc span {
+  color: #ffc87a;
+}
+.connect__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.connect__item {
+  width: calc(25% - 22.5px);
+}
+
+.subscribe__container {
+  padding-bottom: 8.5rem;
+  margin-bottom: 5.5rem;
+  border-bottom: 3px solid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.subscribe__info, .subscribe__title {
+  width: 50%;
+}
+.subscribe__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  max-width: 43rem;
+}
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 2rem;
+  background-color: #f2f1f6;
+  margin-bottom: 4.5rem;
+}
+.subscribe__input, .subscribe__btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+.subscribe__input {
+  flex-grow: 1;
+  opacity: 0.6;
+  margin-right: 1rem;
+}
+.subscribe__btn {
+  color: #1a2b5f;
+  font-weight: bold;
+  cursor: pointer;
+}
+.subscribe__social {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.subscribe__social i {
+  margin-left: 4rem;
+}
+
+.footer {
+  margin-bottom: 8rem;
+}
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.footer__item {
+  width: 25%;
+}
+.footer__item-link {
+  display: block;
+  font-size: 1.8rem;
+  width: fit-content;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

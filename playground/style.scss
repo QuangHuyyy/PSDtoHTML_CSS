@@ -14,7 +14,6 @@ body {
   color: $textColor;
   line-height: 1.4;
   font-weight: 400;
-  padding-bottom: 20rem;
 }
 img {
   display: block;
@@ -262,5 +261,123 @@ a {
   text-overflow: ellipsis;
   &--2 {
     -webkit-line-clamp: 2;
+  }
+}
+
+// Partner
+.partner {
+  &__container {
+    max-width: 83rem;
+  }
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 7.5rem;
+    margin-bottom: 6.5rem;
+    border-bottom: 2px solid;
+  }
+  &__logo-list {
+    @include flexbox(center, space-between);
+    margin: 0 1.5rem 19rem;
+  }
+}
+
+// Conect
+.connect {
+  margin-bottom: 18rem;
+  &__title,
+  &__desc {
+    text-align: center;
+  }
+  &__title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+  }
+  &__desc {
+    font-size: 2.5rem;
+    font-weight: bold;
+    span {
+      color: $primaryColor;
+    }
+    margin-bottom: 6.5rem;
+  }
+  &__list {
+    @include flexbox(center, space-between);
+  }
+  &__item {
+    width: calc(25% - 22.5px);
+  }
+}
+
+// Subscribe
+
+.subscribe {
+  &__container {
+    padding-bottom: 8.5rem;
+    margin-bottom: 5.5rem;
+    border-bottom: 3px solid;
+    @include flexbox(flex-start, space-between);
+  }
+  &__info,
+  &__title {
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 43rem;
+  }
+  &__info {
+  }
+  &__form {
+    @include flexbox(center, space-between);
+    padding: 2rem;
+    background-color: #f2f1f6;
+    margin-bottom: 4.5rem;
+  }
+  &__input,
+  &__btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+  }
+  &__input {
+    flex-grow: 1;
+    opacity: 0.6;
+    margin-right: 1rem;
+  }
+  &__btn {
+    color: $textColor;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__social {
+    font-size: 2.5rem;
+    @include flexbox(center, flex-start);
+    i {
+      margin-left: 4rem;
+    }
+  }
+}
+// Footer
+.footer {
+  margin-bottom: 8rem;
+  &__container {
+    @include flexbox(flex-start, space-between);
+  }
+  &__item {
+    width: 25%;
+    &-link {
+      display: block;
+      font-size: 1.8rem;
+      width: fit-content;
+      font-weight: 600;
+    }
   }
 }
