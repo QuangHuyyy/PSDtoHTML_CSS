@@ -10,7 +10,9 @@ body {
   // overflow: hidden;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.2;
+  color: $gray-dark;
+
 }
 img {
   display: block;
@@ -25,6 +27,7 @@ a {
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 50rem;
 }
 .container {
   max-width: 1170px;
@@ -47,5 +50,43 @@ a {
   &__outline {
     color: $gary-blur;
     border: 1px solid;
+  }
+}
+// Block
+.block {
+  margin-top: 14rem;
+  text-align: center;
+  @include flexbox(center, center, nowrap, column);
+  &__captions {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    &:before,
+    &:after {
+      content: "";
+      width: 3rem;
+      height: 1px;
+      background-color: $primary-color;
+      position: absolute;
+      top: 50%;
+    }
+    &:before {
+      left: 0;
+      transform: translateX(-100%) translateY(-50%);
+    }
+    &:after {
+      right: 0;
+      transform: translateX(100%) translateY(-50%);
+    }
+  }
+  &__heading {
+    margin-top: 4.5rem;
+    line-height: 1.4;
+    font-size: 4rem;
+    font-weight: 600;
+    span {
+      display: block;
+    }
   }
 }
