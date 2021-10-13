@@ -12,7 +12,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.2;
   color: $gray-dark;
-
 }
 img {
   display: block;
@@ -62,6 +61,7 @@ a {
     position: relative;
     display: inline-block;
     padding: 0 10px;
+    margin-bottom: 4.5rem;
     &:before,
     &:after {
       content: "";
@@ -79,9 +79,19 @@ a {
       right: 0;
       transform: translateX(100%) translateY(-50%);
     }
+    &--left:after {
+      display: none;
+    }
+    &--left:before {
+      transform: none;
+      transform: translateY(-50%);
+    }
+    &--left{
+      padding-left: 4rem;
+      margin-bottom: 3rem;
+    }
   }
   &__heading {
-    margin-top: 4.5rem;
     line-height: 1.4;
     font-size: 4rem;
     font-weight: 600;
@@ -89,4 +99,9 @@ a {
       display: block;
     }
   }
+}
+.text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $gray-light;
 }
