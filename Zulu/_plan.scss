@@ -5,7 +5,7 @@
   }
   &__item {
     width: calc(100% / 3 - 3rem);
-    border: 1px solid #ccc;
+    border: 1px solid $gary-blur;
     border-radius: 2rem;
     padding: 7rem 2.5rem;
     font-size: 1.4rem;
